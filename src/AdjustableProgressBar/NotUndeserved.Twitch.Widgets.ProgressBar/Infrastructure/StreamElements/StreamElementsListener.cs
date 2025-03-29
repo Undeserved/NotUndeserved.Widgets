@@ -5,15 +5,15 @@ using System.Text;
 using System.Text.Json;
 
 namespace NotUndeserved.Twitch.Widgets.ProgressBar.Infrastructure.Streamlabs {
-    public class StreamlabsListener {
+    public class StreamElementsListener {
         private readonly ClientWebSocket _webSocket;
-        private readonly ILogger<StreamlabsListener> _logger;
+        private readonly ILogger<StreamElementsListener> _logger;
         private readonly ProgressState _progressState;
         private readonly string _socketUrl;
         private readonly string _accessToken;
         private CancellationTokenSource? _cts;
 
-        public StreamlabsListener(IStreamlabsConfigService streamlabsConfigService, ProgressState progressState, ILogger<StreamlabsListener> logger) {
+        public StreamElementsListener(IStreamElementsConfigService streamlabsConfigService, ProgressState progressState, ILogger<StreamElementsListener> logger) {
             _webSocket = new ClientWebSocket();
             _logger = logger;
             _progressState = progressState;
