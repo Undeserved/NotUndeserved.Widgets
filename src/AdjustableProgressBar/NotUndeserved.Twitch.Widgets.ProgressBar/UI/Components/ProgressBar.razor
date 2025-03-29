@@ -1,0 +1,38 @@
+﻿@using NotUndeserved.Twitch.Widgets.ProgressBar.UI.State
+
+@page "/progress"
+
+@inject ProgressState ProgressState
+@inject HttpClient Http
+
+<div class="progress-bar-container">
+    <img src="progress-bar-bg.jpg" class="progress-bar-bg" />
+    <div class="progress-bar-fill"
+         style="background-color: @ProgressState.BackgroundColour; height: @(ProgressState.FillPercentage * 100 / ProgressState.MaxValue)%;"></div>
+</div>
+
+@code {
+    private Action? progressHandler;
+
+    protected override void OnInitialized() {
+        try {
+            progressHandler = () => InvokeAsync(StateHasChanged);
+            ProgressState.OnProgressUpdated += progressHandler;
+            Console.WriteLine("ProgressBar component initialized");
+            Console.WriteLine($"MaxValue: {ProgressState.MaxValue}, Step: {ProgressState.Step}, BackgroundColour: {ProgressState.BackgroundColour}");
+        } catch (Exception ex) {
+            Console.WriteLine($"Error during OnInitialized: {ex.Message}");
+        }
+    }
+
+    public void Dispose() {
+        try {
+            if (progressHandler is not null) {
+                ProgressState.OnProgressUpdated -= progressHandler;
+                Console.WriteLine("ProgressBar component disposed");
+            }
+        } catch (Exception ex) {
+            Console.WriteLine($"Error during Dispose: {ex.Message}");
+        }
+    }
+}

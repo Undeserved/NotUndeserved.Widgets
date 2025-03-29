@@ -1,0 +1,15 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "MaxValue": 100,
+  "StepSize": 20,
+  "BackgroundColour": "rgba(0, 255, 0, 0.7)",
+  "AccessToken": "",
+  "SocketUrl": "wss://sockets.streamlabs.com/socket.io/?EIO=3&transport=websocket"
+}
