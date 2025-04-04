@@ -6,7 +6,12 @@ using NotUndeserved.Twitch.Widgets.ProgressBar.Services;
 using NotUndeserved.Twitch.Widgets.ProgressBar.UI.State;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-builder.Logging.SetMinimumLevel(LogLevel.Debug);
+builder.Services.AddLogging(
+    logging => {
+        {
+            logging.SetMinimumLevel(LogLevel.Debug);
+        }
+    });
 builder.RootComponents.Add<App>("#app");
 
 //Widget config
