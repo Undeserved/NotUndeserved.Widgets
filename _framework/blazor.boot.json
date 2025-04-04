@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "NotUndeserved.Twitch.Widgets.ProgressBar",
   "resources": {
-    "hash": "sha256-9K33o/q7k3aGjbgXZnkckpLwC1GBDtRRFTOwyBqQjTw=",
+    "hash": "sha256-eL0eB+ffgiCc2/GUjugKvWj9Qe89NUa7nHgXxhKd5W8=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-DTUQS6Jc6BNnS7sYYezFfaUKVmQq0/lanhQuJfygH/k="
     },
@@ -20,7 +20,7 @@
     "assembly": {
       "Microsoft.AspNetCore.Components.wasm": "sha256-sX3ykQU4inVYPLcuDOwJrRIlCd7xR/JoWcwWloBpbzo=",
       "Microsoft.AspNetCore.Components.Web.wasm": "sha256-mr8AMAaRimAK7ijBW/hr8HVLKCGqjrCSCqWrsC5tmVs=",
-      "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-mtfkobuhtn/nKzfmglJJb9kfTjVTie8keMUNTZvDIkk=",
+      "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-NhtbpyuIQ1vOIi1fTpW8s0v3WxmAw/Qy0WduxQnL/6M=",
       "Microsoft.Extensions.Configuration.Abstractions.wasm": "sha256-UA7i+GKLW6++vaKga2kCxRqSWovH2FmUk1ydKRuy+EY=",
       "Microsoft.Extensions.Configuration.Json.wasm": "sha256-Hto3aH43iLmFIj2JF1wgCezx+F3hNR8SzvDS75k2wTs=",
       "Microsoft.Extensions.Configuration.wasm": "sha256-x7gjNce/+4Lp6fkEpcYv1GKczu4NLrFvwCkw9Qb0x/Q=",
@@ -37,7 +37,7 @@
       "Microsoft.JSInterop.wasm": "sha256-/UDU/a22nYNWHSJretwtuHflSN4Z8j8HeEorLjyrHDA=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-GsVw42I3DGzgLTnrD2A9JafVYLHVkyB3Qqe2LyDlYm8=",
       "netstandard.wasm": "sha256-dfGLcMT0qayG2v8uH4imeo1QwbuypFZqAX0KFZJiN1M=",
-      "NotUndeserved.Twitch.Widgets.ProgressBar.wasm": "sha256-A9Jkq4XchBZxLlj/hYcVb6gXL4OPmu2vJRFJqIOKd4k=",
+      "NotUndeserved.Twitch.Widgets.ProgressBar.wasm": "sha256-c90u0fTFbY0Le0Sf2Wm+sqz3S8wMAu7WbF6QLXb++r8=",
       "Polly.Extensions.Http.wasm": "sha256-bqX9l2dLJ0m0IilNsXvbO14i9Lx0oDeudAGIsS3kEAw=",
       "Polly.wasm": "sha256-nqtTJO4ORk0a9aj8aiYClicrbMc0aZVi3iA34o/Gznc=",
       "System.Collections.Concurrent.wasm": "sha256-eha1os2gq/7xxx2a76XIVi2rMlt2oXYYnfaApYQ9WfU=",
